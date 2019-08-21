@@ -18,8 +18,6 @@ public class MemoryCacheApp {
         });
         cache.flushCache();
         logger.info("After Flushing the cache");
-
-
         cache.entrySet().forEach(entry -> {
             logger.info((entry.getKey() + "==>" + entry.getValue()));
         });
