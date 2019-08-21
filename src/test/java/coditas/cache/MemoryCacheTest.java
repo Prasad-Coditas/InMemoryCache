@@ -4,6 +4,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.Map;
+
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -41,4 +43,11 @@ public class MemoryCacheTest<K, V> {
         // Verify the results
         assertNotEquals(expectedResult, result);
     }
+
+    @Test
+    public void testRemoveEldestEntry(Map.Entry<K, V> eldest){
+
+
+    }
+
 }

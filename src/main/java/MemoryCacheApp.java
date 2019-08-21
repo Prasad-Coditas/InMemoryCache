@@ -26,16 +26,15 @@ public class MemoryCacheApp {
         cache.put(e4, d2);
         cache.put(e5, d2);
 
-        logger.info("\nShowing most cached data as per limit");
+        logger.info("Showing most cached data as per limit");
         cache.entrySet().forEach(entry -> {
             logger.info((entry.getKey() + "==>" + entry.getValue()));
         });
         cache.flushCache();
-        logger.info("\nAfter Flushing the cache");
+        logger.info("After Flushing the cache");
 
         cache.entrySet().forEach(entry -> {
             logger.info((entry.getKey() + "==>" + entry.getValue()));
         });
-
     }
 }
