@@ -20,7 +20,6 @@ public class MemoryCacheTest<K, V> {
     @Test
     public void testClear() {
         // Setup
-
         // Run the test
         memoryCacheUnderTest.clear();
         int expectedSize=0;
