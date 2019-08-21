@@ -44,10 +44,4 @@ public class MemoryCacheTest<K, V> {
         assertNotEquals(expectedResult, result);
     }
 
-    @Test
-    public void testRemoveEldestEntry(Map.Entry<K, V> eldest){
-
-
-    }
-
 }
