@@ -15,16 +15,16 @@ public class MemoryUtil {
         Employee e4 = new Employee(4009, "Prasad", 70000.00, "prasad@coditas.com");
         Employee e5 = new Employee(5009, "Ajay", 80000.00, "ajay@coditas.com");
 
-        Employee e6 = new Employee(1008, "Jadhav", 190000.00, "sada@coditas.com");
-        Employee e7 = new Employee(2008, "Ghonmode", 130000.00, "rakesh@coditas.com");
-        Employee e8 = new Employee(3008, "Botre", 150000.00, "aditya@coditas.com");
-        Employee e9 = new Employee(4008, "Lengare", 170000.00, "prasad@coditas.com");
-        Employee e10 = new Employee(5008, "Jumbad", 180000.00, "ajay@coditas.com");
+        Employee e6 = new Employee(6009, "Jadhav", 190000.00, "sada@coditas.com");
+        Employee e7 = new Employee(7009, "Ghonmode", 130000.00, "rakesh@coditas.com");
+        Employee e8 = new Employee(8009, "Botre", 150000.00, "aditya@coditas.com");
+        Employee e9 = new Employee(9009, "Lengare", 170000.00, "prasad@coditas.com");
+        Employee e10 = new Employee(10009, "Jumbad", 180000.00, "ajay@coditas.com");
 
         Department d1 = new Department(10001, "IT", "Pune");
         Department d2 = new Department(10002, "Finance", "Mumbai");
 
-        MemoryCache<Employee, Department> memoryCache = MemoryCache.newInstance(5);
+        MemoryCache<Employee, Department> memoryCache = MemoryCache.newInstance(10);
         memoryCache.put(e1, d1);
         memoryCache.put(e2, d1);
         memoryCache.put(e3, d1);
