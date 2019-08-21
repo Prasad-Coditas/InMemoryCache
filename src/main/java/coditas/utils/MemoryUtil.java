@@ -7,7 +7,10 @@ import coditas.model.Employee;
 public class MemoryUtil {
     private MemoryUtil() {
     }
-
+    /**
+     * this method is used add data into linked Hashmap
+     * Employee and Department objects created and added in the given map
+     */
     public static MemoryCache<Employee, Department> addData() {
         Employee e1 = new Employee(1009, "Sada", 90000.00, "sada@coditas.com");
         Employee e2 = new Employee(2009, "Rakesh", 30000.00, "rakesh@coditas.com");
@@ -25,6 +28,7 @@ public class MemoryUtil {
         Department d2 = new Department(10002, "Finance", "Mumbai");
 
         MemoryCache<Employee, Department> memoryCache = MemoryCache.newInstance(5);
+
         memoryCache.put(e1, d1);
         memoryCache.put(e2, d1);
         memoryCache.put(e3, d1);
@@ -35,6 +39,7 @@ public class MemoryUtil {
         memoryCache.put(e8, d1);
         memoryCache.put(e9, d2);
         memoryCache.put(e10, d2);
+
         return memoryCache;
     }
 }

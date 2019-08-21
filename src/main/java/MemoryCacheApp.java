@@ -9,8 +9,6 @@ import org.slf4j.LoggerFactory;
 public class MemoryCacheApp {
     private static final Logger logger = LoggerFactory.getLogger(MemoryCacheApp.class);
     public static void main(String[] args) {
-
-
         MemoryCache<Employee, Department> cache = MemoryUtil.addData();
         logger.info("---> Showing recently cached data as per limit <---");
         cache.entrySet().forEach(entry ->
