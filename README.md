@@ -10,7 +10,7 @@ Replacement of Entry in case , Memory Limit is reached: A cache should have effi
 
 Here I have given 5 limit or size of map, so in output it shows most recently added/updated data in linked hashmap.
 
-I have added 10 records and it returns 5 records is its size is 5.
+I have added 10 records and it returns recently added 5 records as its size/limit is 5.
 
 <b>Input :</b> <br>
 Employee{employeeId=1009, employeeName='Sada', salary=90000.0, email='sada@coditas.com'}==>Department{deptId=10001, deptName='IT', deptLocation='Pune'}
