@@ -13,13 +13,13 @@ public class MemoryCacheApp {
 
         MemoryCache<Employee, Department> cache = MemoryUtil.addData();
         logger.info("Showing most cached data as per limit");
-        cache.entrySet().forEach(entry -> {
-            logger.info((entry.getKey() + "==>" + entry.getValue()));
-        });
+        cache.entrySet().forEach(entry ->
+            logger.info((entry.getKey() + "==>" + entry.getValue()))
+        );
         cache.flushCache();
         logger.info("After Flushing the cache");
-        cache.entrySet().forEach(entry -> {
-            logger.info((entry.getKey() + "==>" + entry.getValue()));
-        });
+        cache.entrySet().forEach(entry ->
+            logger.info((entry.getKey() + "==>" + entry.getValue()))
+        );
     }
 }

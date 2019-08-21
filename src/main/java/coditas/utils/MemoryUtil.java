@@ -5,6 +5,9 @@ import coditas.model.Department;
 import coditas.model.Employee;
 
 public class MemoryUtil {
+    private MemoryUtil() {
+    }
+
     public static MemoryCache<Employee, Department> addData() {
         Employee e1 = new Employee(1009, "Sada", 90000.00, "sada@coditas.com");
         Employee e2 = new Employee(2009, "Rakesh", 30000.00, "rakesh@coditas.com");
