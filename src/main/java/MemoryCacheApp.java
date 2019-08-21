@@ -12,7 +12,7 @@ public class MemoryCacheApp {
 
 
         MemoryCache<Employee, Department> cache = MemoryUtil.addData();
-        logger.info("Showing most cached data as per limit");
+        logger.info("Showing recently cached data as per limit");
         cache.entrySet().forEach(entry ->
             logger.info((entry.getKey() + "==>" + entry.getValue()))
         );

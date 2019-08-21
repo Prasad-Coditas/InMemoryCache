@@ -24,7 +24,7 @@ public class MemoryUtil {
         Department d1 = new Department(10001, "IT", "Pune");
         Department d2 = new Department(10002, "Finance", "Mumbai");
 
-        MemoryCache<Employee, Department> memoryCache = MemoryCache.newInstance(10);
+        MemoryCache<Employee, Department> memoryCache = MemoryCache.newInstance(5);
         memoryCache.put(e1, d1);
         memoryCache.put(e2, d1);
         memoryCache.put(e3, d1);
